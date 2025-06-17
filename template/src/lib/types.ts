@@ -28,4 +28,14 @@ export interface VoiceEntry {
 export interface ProcessedResult {
   summary: string;
   tagFrequencies: Record<string, number>;
+  tasks?: {
+    task_text: string;
+    due_date?: string;
+    status: 'todo' | 'done' | 'unknown';
+  }[];
+
+  topKeywords?: {
+    keyword: string;
+    count: number;
+  }[];
 } 

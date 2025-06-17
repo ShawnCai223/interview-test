@@ -7,7 +7,7 @@ trap 'rm -rf "$DIR"' EXIT
 
 echo "Cloning $REPO_URL..."
 git clone --depth 1 "$REPO_URL" "$DIR" >/dev/null
-cd "$DIR"
+cd "$DIR/template"
 
 echo "Installing deps..."
 pnpm install --frozen-lockfile --silent --ignore-scripts
