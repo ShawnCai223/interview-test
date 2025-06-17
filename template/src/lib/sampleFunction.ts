@@ -68,8 +68,6 @@ function extractKeywords(text: string): string[] {
     .filter(word => word && !stopwords.includes(word));
 }
 
-
-
 export function processEntries(entries: VoiceEntry[]): ProcessedResult {
   const tagFrequencies: Record<string, number> = {}
   const tasks: { task_text: string; due_date?: string; status: 'todo' }[] = [];

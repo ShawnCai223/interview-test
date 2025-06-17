@@ -50,7 +50,7 @@ That's it — good luck and happy coding!
 
 ### 1. Project Setup Mofify
 
-When running ```pnpm lint```, terminal repoted error:
+When running `pnpm lint`, terminal repoted error:
 
 ```bash
 > sentari-interview-template@0.1.0 lint /Users/shawncai/Github/interview-test/template
@@ -95,4 +95,8 @@ pnpm add -D openai
 
 And also, modify `mockData.ts`, `openai.ts`, `sampleFunction.ts` to make `pnpm lint` no warnings nor errors.
 
-Some TypeScript files report errors in the comments since using `@` after `\\`, which is not proper.
+Some TypeScript files report errors in the comments since using `@` after `\\`, which is not proper, so we remove them.
+
+### 2. Verify Function
+
+`verify-contrib.sh` has been modifed from `cd "$DIR"` to `cd "$DIR/template"`.
